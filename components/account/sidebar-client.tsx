@@ -22,7 +22,7 @@ export function SidebarClient({ links }: { links: AccountSidebarLink[] }) {
             "rounded-lg px-3 py-2 text-sm transition-colors",
             pathname.startsWith(link.href)
               ? "bg-accent font-medium text-foreground"
-              : "text-muted-foreground hover:bg-accent hover:text-foreground",
+              : "text-muted-foreground hover:bg-accent hover:text-primary",
           )}
         >
           {link.label}

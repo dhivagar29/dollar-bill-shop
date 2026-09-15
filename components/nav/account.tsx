@@ -11,7 +11,7 @@ export async function NavAccount() {
       // eslint-disable-next-line next/no-html-link-for-pages
       <a
         href="/account/login"
-        className="flex items-center justify-center text-foreground hover:text-foreground/80 transition-colors"
+        className="flex items-center justify-center text-foreground transition-colors hover:text-primary"
       >
         <UserRoundIcon className="size-5" />
         <span className="sr-only">Sign in</span>
@@ -21,7 +21,7 @@ export async function NavAccount() {
   return (
     <Link
       href="/account"
-      className="flex items-center justify-center text-foreground hover:text-foreground/80 transition-colors"
+      className="flex items-center justify-center text-foreground transition-colors hover:text-primary"
     >
       <UserRoundCheckIcon className="size-5" />
       <span className="sr-only">Account</span>

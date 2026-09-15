@@ -223,7 +223,7 @@ export function AgentPanel({ onOpenChange, open, triggerRef }: AgentPanelProps) 
           <div className="flex items-center gap-2.5">
             <button
               aria-label="Clear chat"
-              className="flex cursor-pointer items-center justify-center text-muted-foreground transition-colors hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40"
+              className="flex cursor-pointer items-center justify-center text-muted-foreground transition-colors hover:text-primary disabled:cursor-not-allowed disabled:opacity-40"
               disabled={clearing || (!messages.length && !input.trim() && !agent.session && !busy)}
               onClick={handleClear}
               type="button"
@@ -232,7 +232,7 @@ export function AgentPanel({ onOpenChange, open, triggerRef }: AgentPanelProps) 
             </button>
             <SheetClose
               aria-label="Close Shop Agent"
-              className="flex cursor-pointer items-center justify-center text-muted-foreground transition-colors hover:text-foreground"
+              className="flex cursor-pointer items-center justify-center text-muted-foreground transition-colors hover:text-primary"
             >
               <XIcon className="size-5" />
             </SheetClose>

@@ -201,7 +201,7 @@ function FilterOption({
   ...props
 }: FilterOptionProps) {
   const sharedClassName = cn(
-    "flex items-center justify-between text-left text-sm text-muted-foreground transition-colors hover:text-foreground",
+    "flex items-center justify-between text-left text-sm text-muted-foreground transition-colors hover:text-primary",
     "data-[selected=true]:font-medium",
     className,
   );

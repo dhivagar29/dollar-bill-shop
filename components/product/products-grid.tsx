@@ -34,7 +34,7 @@ export function ProductsGrid({ collectionUrl, limit, title }: ProductsGridProps)
         {collectionUrl && (
           <Link
             href={collectionUrl}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
           >
             View All
           </Link>

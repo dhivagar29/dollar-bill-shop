@@ -80,7 +80,7 @@ export function OverlayItem({ item }: OverlayItemProps) {
         <div className="grid gap-2.5">
           <div className="grid gap-1">
             {href ? (
-              <Link href={href} className="cursor-pointer transition-opacity hover:opacity-70">
+              <Link href={href} className="cursor-pointer transition-colors hover:text-primary">
                 <h3 className="line-clamp-1 text-sm font-medium text-foreground">{title}</h3>
               </Link>
             ) : (
@@ -161,7 +161,7 @@ export function OverlayItem({ item }: OverlayItemProps) {
                 type="submit"
                 variant="ghost"
                 size="icon"
-                className="size-7 text-muted-foreground hover:text-foreground"
+                className="size-7 text-muted-foreground hover:text-primary"
                 disabled={isOptimistic || !canRemove}
                 aria-label="Remove item"
               >

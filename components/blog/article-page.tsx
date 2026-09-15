@@ -22,7 +22,7 @@ export function ArticlePage({ article }: ArticlePageProps) {
         <Sections className="gap-5">
           <header className="grid gap-4 text-center">
             <Link
-              className="justify-self-center text-muted-foreground text-sm hover:text-foreground"
+              className="justify-self-center text-sm text-muted-foreground hover:text-primary"
               href={`/blogs/${article.blogHandle}`}
             >
               {article.blogTitle}

@@ -1,5 +1,5 @@
 import { BotIdClient } from "botid/client";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       >
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-100 focus:rounded-md focus:bg-background focus:px-5 focus:py-2 focus:text-sm focus:font-medium focus:shadow-lg focus:ring-2 focus:ring-foreground focus:outline-none"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-100 focus:rounded-md focus:bg-background focus:px-5 focus:py-2 focus:text-sm focus:font-medium focus:shadow-lg focus:ring-2 focus:ring-primary focus:outline-none"
         >
           Skip to content
         </a>
@@ -65,6 +65,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
+
+export const viewport: Viewport = {
+  colorScheme: "dark",
+  themeColor: "#0a0a0a",
+};
 
 export const generateMetadata = async (): Promise<Metadata> => {
   return {
