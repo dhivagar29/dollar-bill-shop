@@ -48,7 +48,7 @@ function SearchTrigger() {
       render={
         <button
           type="button"
-          className="flex items-center justify-center text-foreground hover:text-foreground/80 transition-colors"
+          className="flex items-center justify-center text-foreground transition-colors hover:text-primary"
         >
           <Search className="size-5" />
           <span className="sr-only">Search</span>
@@ -159,12 +159,12 @@ function SearchDialogContent({ onClose }: { onClose: () => void }) {
                       inputRef.current.focus();
                     }
                   }}
-                  className="shrink-0 text-sm text-foreground/60 hover:text-foreground transition-colors"
+                  className="shrink-0 text-sm text-foreground/60 transition-colors hover:text-primary"
                 >
                   Clear
                 </button>
               )}
-              <DialogPrimitive.Close className="shrink-0 flex items-center justify-center rounded-full text-foreground/40 hover:text-foreground transition-colors">
+              <DialogPrimitive.Close className="shrink-0 flex items-center justify-center rounded-full text-foreground/40 transition-colors hover:text-primary">
                 <X className="size-4" />
                 <span className="sr-only">Close</span>
               </DialogPrimitive.Close>

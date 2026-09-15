@@ -18,7 +18,7 @@ function CartCountBadge() {
   const count = useCart((state) => state.data.totalQuantity);
   if (count === 0) return null;
   return (
-    <span className="flex size-5 items-center justify-center rounded-full bg-foreground text-xs text-background">
+    <span className="flex size-5 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground">
       {count}
     </span>
   );
@@ -42,7 +42,7 @@ export function CartOverlay({ description, title }: CartOverlayProps) {
           </div>
           <SheetClose
             aria-label="Close cart"
-            className="flex cursor-pointer items-center justify-center text-muted-foreground transition-colors hover:text-foreground"
+            className="flex cursor-pointer items-center justify-center text-muted-foreground transition-colors hover:text-primary"
           >
             <XIcon className="size-5" />
           </SheetClose>

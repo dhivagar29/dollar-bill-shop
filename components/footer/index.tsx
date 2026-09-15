@@ -16,7 +16,7 @@ export async function Footer() {
   const items: MenuItem[] = [];
   const policies = await getShopPolicies({}).catch(() => []);
   return (
-    <footer>
+    <footer className="border-t border-border">
       {/* pb-22 clears the fixed agent ActionBar pill when it renders */}
       <Container className={cn("pt-20 pb-10", shopConfig.agent.isEnabled && "pb-22")}>
         <Sections className="gap-10">
@@ -30,7 +30,7 @@ export async function Footer() {
                 <Link
                   key={policy.handle}
                   href={`/policies/${policy.handle}`}
-                  className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-primary"
                 >
                   {policy.title}
                 </Link>
@@ -75,7 +75,7 @@ function FooterMenu({ items }: { items: MenuItem[] }) {
           {column.url ? (
             <MenuLink
               url={column.url}
-              className="block text-sm font-semibold hover:opacity-70 transition-opacity"
+              className="block text-sm font-semibold transition-colors hover:text-primary"
             >
               {column.title}
             </MenuLink>
@@ -88,7 +88,7 @@ function FooterMenu({ items }: { items: MenuItem[] }) {
                 <li key={leaf.id}>
                   <MenuLink
                     url={leaf.url}
-                    className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    className="block text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     {leaf.title}
                   </MenuLink>

@@ -21,8 +21,8 @@ export function MobileTabsClient({ tabs }: { tabs: AccountTab[] }) {
           className={cn(
             "flex-1 px-3 py-2.5 text-center text-sm transition-colors",
             pathname.startsWith(tab.href)
-              ? "border-b-2 border-foreground font-medium text-foreground"
-              : "text-muted-foreground hover:text-foreground",
+              ? "border-b-2 border-primary font-medium text-primary"
+              : "text-muted-foreground hover:text-primary",
           )}
         >
           {tab.label}

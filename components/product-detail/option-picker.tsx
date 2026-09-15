@@ -28,8 +28,8 @@ export function OptionPicker({
             !value.available
               ? "font-normal border-dashed border-border text-muted-foreground/50 line-through cursor-not-allowed"
               : value.selected
-                ? "font-medium border-foreground text-foreground starting:border-border starting:text-muted-foreground"
-                : "font-normal border-border text-muted-foreground hover:border-foreground hover:text-foreground",
+                ? "font-medium border-primary text-primary starting:border-border starting:text-muted-foreground"
+                : "font-normal border-border text-muted-foreground hover:border-primary hover:text-primary",
           );
 
           // Invisible medium-weight twin reserves the bold width so pills don't shift on selection.

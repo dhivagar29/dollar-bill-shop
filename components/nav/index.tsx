@@ -18,14 +18,14 @@ export function Nav() {
   ];
   return (
     <nav
-      className="sticky top-0 z-30 w-full bg-background pt-[env(safe-area-inset-top,0px)] transition-shadow duration-250"
+      className="sticky top-0 z-30 w-full border-b border-border bg-background pt-[env(safe-area-inset-top,0px)] transition-shadow duration-250"
       id="nav-outer"
     >
       <Container className="flex h-16 items-center gap-2.5 md:gap-5">
         <MobileMenu items={items} />
 
         <Link className="flex items-center shrink-0" href="/">
-          <span className="text-xl leading-4">{shopConfig.site.name}</span>
+          <span className="text-xl leading-4 text-primary">{shopConfig.site.name}</span>
         </Link>
 
         <QuickLinks items={items} />
